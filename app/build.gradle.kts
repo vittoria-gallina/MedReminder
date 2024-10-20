@@ -50,6 +50,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0") // Use the latest version
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0") // Use the latest version
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

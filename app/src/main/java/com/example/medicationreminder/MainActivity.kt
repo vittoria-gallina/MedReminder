@@ -82,7 +82,6 @@ fun MainScreen(navController: NavController){
         Button(
             onClick = {
                 navController.navigate("second")
-                Log.d("NAVIGATION", "Navigating to second screen")
             },
             modifier = Modifier
                 .width(300.dp) // Set width for a rectangular shape
@@ -98,12 +97,7 @@ fun MainScreen(navController: NavController){
 @Composable
 fun SecondScreen() {
     var userInput by remember { mutableStateOf("") } // State to hold the text input
-    Image(
-        painter = painterResource(id = R.drawable.background2),
-        contentDescription = null,
-        modifier = Modifier.fillMaxSize(),
-        contentScale = ContentScale.Crop
-    )
+
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
